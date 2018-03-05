@@ -45,6 +45,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         
